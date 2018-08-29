@@ -12,7 +12,7 @@ mkdir -p ./log;
 # * needed instead of ./ to prevent ./filename.annotaiton.tsv.gz
 annotation=1000g_100klines_example_old.annotation.tsv.gz;
 annotationBaseName=1000g_100klines_example.annotation;
-annotationVcfGz=1000g_100klines_old_example.annotation.vcf.gz;
+annotationVcfGz=1000g_100klines_old_example.annotation.20klines.vcf.gz;
 annotationSampleList=1000g_100klines_example.annotation.sample_list;
 
 fam=1000g_100klines_example.fake.fam

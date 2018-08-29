@@ -72,14 +72,14 @@ if(!is.null(file.cov)) {
   yCov <- famCov$Phenotype
   sex <- famCov$Sex
 
-  obj<-SKAT_Null_Model(yCov ~ x1 + x2 + x3 + x4 + sex, out_type="D", n.Resampling=1000, type.Resampling='bootstrap') 
+  obj<-SKAT_Null_Model(yCov ~ x1 + x2 + x3 + x4 + sex, out_type="D") #n.Resampling=1000, type.Resampling='bootstrap'
 } else {
   famCov <- Read_Plink_FAM(file.fam, Is.binary=TRUE)
  
   yCov <- famCov$Phenotype
   sex <- famCov$Sex
 
-  obj<-SKAT_Null_Model(yCov ~ sex, out_type="D", n.Resampling=1000, type.Resampling='bootstrap') 
+  obj<-SKAT_Null_Model(yCov ~ sex, out_type="D") #n.Resampling=1000, type.Resampling='bootstrap'
 }
 
 
